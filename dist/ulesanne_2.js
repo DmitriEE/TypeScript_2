@@ -1,3 +1,4 @@
+"use strict";
 /*
 Konsoolirakendus: prindib Store Analytics raporti.
 
@@ -42,79 +43,30 @@ Kui tootel on specs, siis printige need kujul: specs: key=value, key=value, ...
 
 Kui specs puuduvad, siis seda osa reas ei ole.
 */
-
 // =====================
 // TYPES / INTERFACES
 // =====================
-
-interface Supplier {
-  id: number;
-  name: string;
-
-}
-
-
+let a = 5.5;
+console.log(a);
 // =============================
 // FUNCTIONS FOR DATA GENERATION
 // =============================
-
-function generateRandomSuppliers(count: number): string {
-  const suppliers = [
-    "Global Trade Ltd",
-    "Nordic Supply Co",
-    "Prime Industrial",
-    "BlueWave Logistics",
-    "Sunrise Wholesale",
-    "Titan Distribution",
-    "Evergreen Imports",
-    "Atlas Export Group",
-    "SilverLine Supply",
-    "Metro Wholesale"
-  ];
-
-  let result: string;
-
-  for (let i = 0; i < count; i++) {
-    const randomIndex = Math.floor(Math.random() * suppliers.length);
-    result = suppliers[randomIndex];
-    
-  }
-
-
-  return result;
-}
-
+//f string
+//`Меня зовут ${name}, мне ${age} лет`
+//Math.random() * 999
 // =====================
 // DATA
 // =====================
-
-const suppliers: Supplier[] = [
-  { id: Math.floor(Math.random() * 1000) + 1, name: generateRandomSuppliers(1) },
-  { id: Math.floor(Math.random() * 1000) + 1, name: generateRandomSuppliers(1) }
-];
-
-
-
 // =====================
 // FUNCTIONS
 // =====================
-
-
-
-
 // =====================
 // REPORT PRINT
 // =====================
-
 //function printReport(): void {
-  
-    console.log(generateRandomSuppliers(1));
-
 // }
 //}
-
 // =====================
 // RUN
 // =====================
-
 //printReport();
