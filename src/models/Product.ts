@@ -1,6 +1,7 @@
 import { Category } from './Category.js';
 import { Supplier } from './Supplier.js';
 import { Reviews } from './Review.js';
+import { RatingCount } from '../helpers/ratingcount.js';
 
 
 export interface Product {
@@ -12,4 +13,6 @@ export interface Product {
     category: string
     supplier: Supplier
     reviews: Reviews[]
+    rating?: number
+    priceupd?: number
 }

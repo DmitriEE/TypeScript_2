@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const data_1 = require("./data/data");
-console.log(data_1.product.reviews);
+console.log(data_1.product1.rating);
