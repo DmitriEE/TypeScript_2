@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.product6 = exports.product5 = exports.product4 = exports.product3 = exports.product2 = exports.product1 = exports.ArrOfProducts = void 0;
-const ratingcount_1 = require("../helpers/ratingcount");
-exports.ArrOfProducts = [];
+import { RatingCount } from '../helpers/ratingcount';
+export const ArrOfProducts = [];
 //lisame eine
-exports.product1 = {
+export const product1 = {
     id: 1,
     name: "T-shirt",
     available: "in stock",
@@ -21,10 +18,10 @@ exports.product1 = {
     ],
     priceupd: 999.99
 };
-exports.product1.rating = (0, ratingcount_1.RatingCount)(exports.product1);
-exports.ArrOfProducts.push(exports.product1);
+product1.rating = RatingCount(product1);
+ArrOfProducts.push(product1);
 //
-exports.product2 = {
+export const product2 = {
     id: 2,
     name: "Jeans",
     available: "in stock",
@@ -41,9 +38,9 @@ exports.product2 = {
     ],
     priceupd: 59.99
 };
-exports.product2.rating = (0, ratingcount_1.RatingCount)(exports.product2);
-exports.ArrOfProducts.push(exports.product2);
-exports.product3 = {
+product2.rating = RatingCount(product2);
+ArrOfProducts.push(product2);
+export const product3 = {
     id: 3,
     name: "Sneakers",
     available: "out of stock",
@@ -60,9 +57,9 @@ exports.product3 = {
     ],
     priceupd: 79.99
 };
-exports.product3.rating = (0, ratingcount_1.RatingCount)(exports.product3);
-exports.ArrOfProducts.push(exports.product3);
-exports.product4 = {
+product3.rating = RatingCount(product3);
+ArrOfProducts.push(product3);
+export const product4 = {
     id: 4,
     name: "Jacket",
     available: "in stock",
@@ -79,9 +76,9 @@ exports.product4 = {
     ],
     priceupd: 110.00
 };
-exports.product4.rating = (0, ratingcount_1.RatingCount)(exports.product4);
-exports.ArrOfProducts.push(exports.product4);
-exports.product5 = {
+product4.rating = RatingCount(product4);
+ArrOfProducts.push(product4);
+export const product5 = {
     id: 5,
     name: "Backpack",
     available: "in stock",
@@ -98,9 +95,9 @@ exports.product5 = {
     ],
     priceupd: 44.50
 };
-exports.product5.rating = (0, ratingcount_1.RatingCount)(exports.product5);
-exports.ArrOfProducts.push(exports.product5);
-exports.product6 = {
+product5.rating = RatingCount(product5);
+ArrOfProducts.push(product5);
+export const product6 = {
     id: 6,
     name: "Cap",
     available: "in stock",
@@ -117,5 +114,5 @@ exports.product6 = {
     ],
     priceupd: 19.99
 };
-exports.product6.rating = (0, ratingcount_1.RatingCount)(exports.product6);
-exports.ArrOfProducts.push(exports.product6);
+product6.rating = RatingCount(product6);
+ArrOfProducts.push(product6);

@@ -1,2 +1,3 @@
-import { product1 } from "./data/data";
-console.log(product1.rating)
+import { ArrOfProducts, product1 } from "./data/data";
+import { ProductPrint } from "./helpers/listtotext";
+ProductPrint(ArrOfProducts);

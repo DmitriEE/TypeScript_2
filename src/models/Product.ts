@@ -5,14 +5,15 @@ import { RatingCount } from '../helpers/ratingcount.js';
 
 
 export interface Product {
-    id: number
+    id?: number
     name: string
-    available: string
+    available?: string
+    quantity?: number
     price: number
     specs: Array<string>
     category: string
-    supplier: Supplier
-    reviews: Reviews[]
+    supplier?: Supplier
+    reviews?: Reviews[]
     rating?: number
     priceupd?: number
 }
